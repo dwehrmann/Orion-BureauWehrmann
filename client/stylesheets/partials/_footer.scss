@@ -24,7 +24,7 @@ footer {
     }
   }
   nav {
-    font-size: 11px;
+    font-size: 1.5em;
     ul {
       margin: 0 0;
       padding: 0 0;
@@ -35,6 +35,13 @@ footer {
       padding: 8px;
       display: inline-block;
       text-transform: uppercase;
+     a{
+      color:#fff;
+      &:hover{
+       text-decoration:underline;
+       color:#fff;
+      }
+     }
     }
   }
 }

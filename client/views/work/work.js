@@ -29,3 +29,7 @@ Template.workSingle.rendered = function() {
   $('.content img').wrap( "<div class='content-wrap'></div>");
   $('.content-wrap').prepend("<div class='controls'></div>");
 };
+
+Template.work.rendered = function(){
+   $('#work a:first-child').prepend('<div style="width:50%; border-bottom:10px solid #000; height:200px;float:right;color:#000; position:relative;"><p style="position:absolute; bottom:30px; font-size:20px;"><strong>NEU</strong> in unserem Portfolio</p></div>');
+};

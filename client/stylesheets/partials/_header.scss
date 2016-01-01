@@ -1,36 +1,68 @@
 header {
-  text-align: center;
-  min-height: 500px;
-  position: relative;
-  @include transition(all .5s);
-  .centered-v {
-    margin: auto;
-    position: absolute;
-    height: 110px;
-    top: 0; left: 0; bottom: 0; right: 0;
-  }
-  h5 {
-    color: #343434;
-    max-width: 540px;
-    margin: 0 auto;
-    font-weight:400;
-    font-size: 1.5rem;
-    line-height: 1.2;
-  }
-  &.small {
-    h1 {
-      font-size: 2rem;
-    }
-    .social {
-      margin-top: 2px;
-      i {
-        font-size: 1.3rem;
+ text-align: left;
+ min-height: 70vh;
+ position: relative;
+ background: #fff;
+ @include transition(all .5s);
+  .header-container{
+   width:100%;
+   background:transparent;
+   position:absolute;
+   top:0;
+   right:0;
+    .headermenu {
+     width: auto;
+     text-align: right;
+     float: right;
+     .header-left{
+      float:left;
+      padding-top:20px;
+      padding-right:20px;
+     }
+     nav {
+      background: #000;
+      height: 60px;
+      padding-top:30px;
+      padding:20px;
+      float: right;
+      ul {
+       display: inline;
+       li {
+        float: left;
+        margin-right: 20px;
+        a {
+         color: #fff;
+        }
+        &:hover {
+         text-decoration: underline;
+        }
+       }
       }
+     }
     }
-    @include transition(all .5s);
-    min-height: 120px;
-    h5 {
-      display: none;
-    }
+ }
+ h5 {
+  color: #343434;
+  max-width: 540px;
+  //    margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+ }
+ &.small {
+  h1 {
+   font-size: 2rem;
   }
+  .social {
+   margin-top: 2px;
+   i {
+    font-size: 1.3rem;
+   }
+  }
+  @include transition(all .5s);
+  min-height: 120px;
+  h5 {
+   display: none;
+  }
+ }
 }

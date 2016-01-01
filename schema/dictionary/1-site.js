@@ -6,7 +6,7 @@ orion.dictionary.addDefinition('siteName', 'site', {
 
 orion.dictionary.addDefinition('siteDescription', 'site', {
   type: String,
-  label: "Short Blurp about the site",
+  label: "Short Description about the site",
   optional: true,
 });
 

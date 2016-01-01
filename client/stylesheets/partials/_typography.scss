@@ -1,10 +1,12 @@
 body, html {
   font-size: 13px;
   color:#fff;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 a {
-  color: #606060;
+  color: #333;
   @include transition(all .5s);
   svg {
     @include transition(all .5s);

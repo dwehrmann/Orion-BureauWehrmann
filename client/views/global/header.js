@@ -28,3 +28,7 @@ Template.header.helpers({
   },
 
 });
+
+Template.header.rendered = function () {
+  this.$('.headervideo').vide('https://0.s3.envato.com/h264-video-previews/2be80d1b-7a07-4e9c-9337-a692cb9229d6/655433.mp4');
+};

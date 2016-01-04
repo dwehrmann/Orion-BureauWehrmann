@@ -1,13 +1,6 @@
 <template name="work">
  <section class="work" name="work">
-  <!-- <div class="controls">
-      <label>Filter:</label>
 
-      <button class="filter" data-filter="all">All</button>
-      <button class="filter php" data-filter=".php"><i class="icon-php-alt"></i></button>
-      <button class="filter node" data-filter=".node">Node</button>
-      <button class="filter rails" data-filter=".rails"><i class="devicon-rails-plain"></i></button>
-    </div> -->
   <div class="video-divider">
    <div class="left">
    </div>
@@ -84,10 +77,12 @@
    <br>
   </div>
   </div>
-  
+
   <div id="work" class="mixitup">
    {{#each works}} {{> workBlock }} {{/each}}
-   
+     <div style="float:left;position:relative;width:60%;height:100px;">
+      <a class="button hidemore_button" style="position:absolute; right:0; height:100px !important;width:100px !important;color:#fff !important;background:#000 !important; font-size:120px;text-align:center;font-weight:200;line-height:63px;">+</a>
+      </div>
    <div class="gap"></div>
    <div class="gap"></div>
   </div>

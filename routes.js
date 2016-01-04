@@ -88,6 +88,19 @@ Router.map(function() {
 
   // Blog and individual blog posts
 
+   this.route('portfolio', {
+    path: '/portfolio',
+    fastRender: true,
+    layoutTemplate: 'portfolio',
+    onAfterAction: function() {
+      dict = orion.dictionary.collection.findOne();
+      SEO.set({
+        title: 'Portfolio | ' + dict.seoTitle,
+      });
+      GAnalytics.pageview();
+    }
+  });
+
   this.route('blog', {
     path: '/blog',
     fastRender: true,

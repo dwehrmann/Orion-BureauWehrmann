@@ -14,6 +14,8 @@
  bottom: 0;
  right: 0;
  padding-left: 30%;
+  margin-bottom:8em;
+
  h1 {
   font-size: 2.2em;
   padding: 0 40px 40px 0;
@@ -122,6 +124,65 @@ button + label {
  margin-left: 1em;
 }
 
+.posts.work-single{
+
+  .article{
+
+      .projSection{
+        width:100%;
+        display:block;
+        position:relative;
+        min-height:500px;
+      }
+
+      .projectRole{
+       margin:10px 0 40px 0;
+        font-size:10px;
+      }
+
+      .projectName{
+       border-bottom:10px solid black;
+        text-align:left;
+        padding-left:1.7em;
+        padding-bottom:0.5em;
+        width:70%;
+      }
+      .featured-image{
+        width:100%;
+        display:block;
+      }
+
+      .content{
+        margin:1em 4em;
+        padding:0;
+
+      }
+
+      img{
+/*        float:left; */
+        width:70%;
+      }
+      .ProjectDescription{
+        float:right;
+        text-align:left;
+        padding:0em 3em;
+        width:30%;
+        letter-spacing:0.1em;
+        &::before{
+          content:"Beschreibung";
+          text-transform:uppercase;
+          font-size:0.8em;
+          width:100%;
+          display:block;
+          border-bottom:1px solid black;
+          margin-bottom:2em;
+          letter-spacing:0.3em;
+          font-weight:bold;
+        }
+      }
+    }
+}
+
 // MIX IT UP STYLES
 .mixitup {
  //  padding: 1% 1% 1%;
@@ -130,7 +191,8 @@ button + label {
  font-size: 0.1px;
  /* background: #68b8c4; */
  -webkit-backface-visibility: hidden;
- height:900px;
+ height:auto !important;
+  min-height:1200px;
  position: relative;
  &:after {
   content: '';
@@ -141,7 +203,7 @@ button + label {
    width:40%;
    display: inline-block;
    float:right;
-   height:400px;
+   height:400px !important;
    overflow: hidden;
   vertical-align: top;
   &:first-child{
@@ -149,6 +211,7 @@ button + label {
      height:600px !important;
    }
   }
+
    .mix{
 //     border:3px solid red;
     }
@@ -160,7 +223,7 @@ button + label {
    height:100%;
    &:first-child{
     height:100%;
-    
+
    }
   }
   &:first-child{
@@ -183,9 +246,9 @@ button + label {
    display: inline-flex !important;
    vertical-align: top;
    float: right;
-   
+
    .overlay {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .1);
     position: absolute;
     width: 100%;
     height: 100%;

@@ -1,18 +1,33 @@
 <template name="workSingle">
   <section class="posts work-single" name="work">
-    <a href="{{ pathFor 'base' }}">Back</a>
-    <div class="article">
-      <h2>{{projectName}}</h2>
-      <h5>{{projectRole}}</h5>
-      <div class="tools">
-        {{{ icons toolsUsed }}}
-      </div>
-      <div class="content">
+    <div class="article" style="margin:0 auto;">
+      <h2 class="projectName">{{projectName}}</h2>
+        <div class="content">
       {{{detailText}}}
+        <h5 class="projectRole">{{projectRole}}</h5>
       </div>
+       <div class="projSection">
+            <img src="{{DetailImage1.url}}" />
+            <p class="ProjectDescription">{{{DetailImage1Text}}}</p>
+        </div>
+       <div class="projSection">
+            <img src="{{DetailImage2.url}}" />
+            <p class="ProjectDescription">{{{DetailImage2Text}}}</p>
+        </div>
+        <div class="projSection">
+            <img src="{{DetailImage3.url}}" />
+            <p class="ProjectDescription">{{{DetailImage3Text}}}</p>
+        </div>
+        <div class="projSection">
+            <img src="{{DetailImage4.url}}" />
+            <p class="ProjectDescription">{{{DetailImage4Text}}}</p>
+        </div>
+
       <div class="link">
-        <a class="btn" href="{{projectLink}}">zum Projekt</a>
+        <a class="btn" style="color:#000;" href="{{projectLink}}" target="_blank">zum Projekt</a>
       </div>
+        <br>
+      <a href="{{ pathFor 'base' }}">zur&uuml;ck</a>
     </div>
   </section>
 </template>

@@ -133,6 +133,10 @@ button + label {
         display:block;
         position:relative;
         min-height:500px;
+        img{
+          opacity: 0;
+          transition: opacity .3s ease-in;
+        }
       }
 
       .projectRole{
@@ -199,6 +203,25 @@ button + label {
   display: inline-block;
   width: 50%;
  }
+  .hidemore_wrapper{
+    float:left;
+    position:relative;
+    width:60%;
+    height:100px;
+    .hidemore_button{
+      position:absolute;
+      right:0;
+      height:100px !important;
+      width:100px !important;
+      color:#fff !important;
+      background:#000 !important;
+      font-size:120px;
+      text-align:center;
+      font-weight:200;
+      line-height:63px;
+      cursor:pointer;
+    }
+  }
  a {
    width:40%;
    display: inline-block;
@@ -226,7 +249,7 @@ button + label {
 
    }
   }
-  &:first-child{
+  &:nth-child(3n+1){
    width:60%;
    float:left;
    display: inline-block;

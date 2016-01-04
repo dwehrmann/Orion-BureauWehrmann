@@ -1,3 +1,5 @@
+Template.work.Listings = function () { return Listings; };
+
 Template.work.helpers({
     works: function () {
       return orion.entities.works.collection.find({}, {sort: {sortOrder: 1}});
@@ -28,7 +30,7 @@ Template.workSingle.rendered = function() {
   $('header').addClass('small');
   $('.content img').wrap( "<div class='content-wrap'></div>");
   $('.content-wrap').prepend("<div class='controls'></div>");
-  $(".projSection img").unveil(-200, function() {
+  $(".projSection img").unveil(-50, function() {
     $(this).load(function() {
       this.style.opacity = 1;
     });

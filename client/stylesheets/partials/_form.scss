@@ -1,12 +1,15 @@
 input.form-control, textarea.form-control {
-  background: $greyBackground;
+  background: #fff;
   border: none;
   border-bottom: 1px solid $greyBorder;
+   background:#f5f5f5;
   &:focus {
     box-shadow: none;
     -webkit-box-shadow: none;
     border: none;
-    border-bottom: 2px solid rgba(255,255,255,.5);
+    background:#fff;
+    border-bottom: 1px solid $greyBorder;
+
   }
 }
 .btn {

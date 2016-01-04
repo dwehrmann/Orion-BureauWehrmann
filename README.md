@@ -1,4 +1,4 @@
-# Orion Portfolio Starter - Meteor | BUREAU WEHRMANN
+# Orion Portfolio BUREAU WEHRMANN
 
 ##Work in Progress
 

@@ -1,9 +1,11 @@
 html, body, *{
-font-family: 'Dosis', sans-serif;
+font-family: 'Abel', sans-serif;
 }
+
 h1, h2, h3, h4, h5, p{
- font-family: 'Dosis', sans-serif;
+font-family: 'Abel', sans-serif;
 }
+
 
 @mixin border-top-radius($x) {
   border-top-radius: $x;
@@ -24,6 +26,11 @@ h1, h2, h3, h4, h5, p{
   border-left-radius: $x;
   -webkit-border-left-radius: $x;
   -moz-border-left-radius: $x;
+}
+
+ h1.error4o4{
+  font-size:20em;
+   line-height:0.6em;
 }
 
 // Fix for bower isses

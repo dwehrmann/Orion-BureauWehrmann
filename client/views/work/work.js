@@ -34,6 +34,9 @@ Template.workSingle.rendered = function() {
     $(this).load(function() {
       this.style.opacity = 1;
     });
+   if ($('p.ProjectDescription').text().length > 0) {
+    $('p.ProjectDescription').hide();
+   }
 });
 
   // REMOVE EMPTY DETAIL ENTRIES

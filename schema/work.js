@@ -7,6 +7,10 @@ orion.addEntity('works', {
 		label: "Upload a company logo if one exist or is of high enough quality (png)",
 		optional: true
 	}),
+  sortOrder: {
+    type: String,
+    label: "Order",
+  },
 	projectBackground: {
 		type: String,
 		label: "Background Color",
